@@ -1,4 +1,4 @@
-const C='alhan-v2',A=['./','index.html','style.css','app.js','manifest.json','hymns.json','icon.svg'];
+const C='alhan-v3',A=['./','index.html','style.css','app.js','manifest.json','hymns.json','pp1.json','pp2.json','icon.svg'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(A)));self.skipWaiting()});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!=C).map(x=>caches.delete(x)))));self.clients.claim()});
 self.addEventListener('fetch',e=>{if(e.request.method!='GET')return;e.respondWith(fetch(e.request).then(r=>{if(r.ok&&!e.request.url.match(/\.(mp3|m4a|ogg)/)){const c=r.clone();caches.open(C).then(x=>x.put(e.request,c))}return r}).catch(()=>caches.match(e.request)))});
