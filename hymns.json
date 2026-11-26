@@ -1,12 +1,1 @@
-{"categories":[
-{"id":"liturgy","name":"القداس","icon":"✝"},
-{"id":"feasts","name":"الأعياد السيدية","icon":"⭐"},
-{"id":"lent","name":"الصوم الكبير","icon":"†"},
-{"id":"holyweek","name":"أسبوع الآلام","icon":"✟"},
-{"id":"resurrection","name":"القيامة والخماسين","icon":"☀"},
-{"id":"kiahk","name":"الكيهكي","icon":"☾"},
-{"id":"psalmody","name":"الإبصلمودية والتسبحة","icon":"♪"},
-{"id":"saints","name":"تماجيد القديسين","icon":"✦"},
-{"id":"virgin","name":"السيدة العذراء","icon":"❀"},
-{"id":"hymns","name":"ترانيم","icon":"♫"}],
-"hymns":[]}
+{"categories": [{"id": "liturgy", "name": "القداس", "icon": "✝"}, {"id": "feasts", "name": "الأعياد السيدية", "icon": "⭐"}, {"id": "lent", "name": "الصوم الكبير", "icon": "†"}, {"id": "holyweek", "name": "أسبوع الآلام", "icon": "✟"}, {"id": "resurrection", "name": "القيامة والخماسين", "icon": "☀"}, {"id": "kiahk", "name": "الكيهكي", "icon": "☾"}, {"id": "psalmody", "name": "الإبصلمودية والتسبحة", "icon": "♪"}, {"id": "tawzee", "name": "مدائح التوزيع", "icon": "❖"}, {"id": "saints", "name": "تماجيد القديسين", "icon": "✦"}, {"id": "virgin", "name": "السيدة العذراء", "icon": "❀"}, {"id": "hymns", "name": "ترانيم", "icon": "♫"}], "hymns": []}
