@@ -22,3 +22,5 @@ nav{display:flex;background:#fffaf0;border-top:2px solid #d8c8a4}nav button{flex
 #sheet{position:fixed;inset:0;background:#0007;display:flex;align-items:flex-end;z-index:9}#sheet[hidden]{display:none}#sheet>div{background:#f6efe0;width:100%;max-height:85%;overflow:auto;border-radius:20px 20px 0 0;padding:16px}
 #sheet input,#sheet textarea,#sheet select{width:100%;font:inherit;font-size:19px;padding:10px;margin:4px 0 10px;border:2px solid #d8c8a4;border-radius:10px;background:#fffaf0}#sheet textarea{min-height:110px}
 .note{font-size:16px;color:#6b5a48;line-height:1.7}
+
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 12px;white-space:nowrap}.chips button{font:inherit;font-size:18px;padding:8px 14px;border:2px solid #7a1f1f;border-radius:20px;background:#fffaf0;color:#7a1f1f}.chips .on{background:#7a1f1f;color:#fff}
