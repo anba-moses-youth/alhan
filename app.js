@@ -13,7 +13,7 @@ const lbl={ar:'عربي',cop:'قبطي',cta:'قبطي بحروف عربي'};
 const all=()=>DB.hymns.concat(mine());
 const cs=curSeason();
 const norm=s=>(s||'').replace(/[\u064B-\u0652\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه');
-async function load(){try{const r=await fetch('hymns.json?'+Date.now());DB=await r.json();localStorage.db=JSON.stringify(DB)}catch(e){try{DB=JSON.parse(localStorage.db)}catch(_){}}render()}
+async function load(){try{const r=await fetch('hymns.json?'+Date.now());DB=await r.json();for(const f of['pp1.json','pp2.json']){try{const q=await fetch(f+'?'+Date.now());DB.hymns=DB.hymns.concat(await q.json())}catch(_){}}localStorage.db=JSON.stringify(DB)}catch(e){try{DB=JSON.parse(localStorage.db)}catch(_){}}render()}
 function esc(s){return String(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}
 function hrow(h){return `<div class="row" data-id="${h.id}"><b>${esc(h.title)}<small>${esc((DB.categories.find(c=>c.id==h.cat)||{}).name||'')}${h.audio?' • صوت':''}</small></b><button class="s" data-fav="${h.id}">${fav().includes(h.id)?'★':'☆'}</button></div>`}
 function list(a,msg){return a.length?a.map(hrow).join(''):`<div class="empty">${msg}</div>`}
